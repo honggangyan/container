@@ -1,0 +1,18 @@
+# Choose a base image
+FROM python:3.9-slim
+
+
+# Set up the work directory
+WORKDIR /app
+
+
+# Copy everything in the current directory to the work directory
+COPY . /app
+
+
+# Install requirements packages
+RUN pip install --no-cache-dir -r requirements.txt
+
+
+# Command when run the container
+CMD [ "python", "app.py" ]
