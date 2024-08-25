@@ -1,5 +1,2 @@
 # container
-This is a repo for practicing containerization
-
-
-deleted.
+This is a repo for practicing docker containerization.
